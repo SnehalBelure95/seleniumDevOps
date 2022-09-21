@@ -16,6 +16,7 @@ public class Demo2_2 {
 	{   
 		// Specify the base URL to the RESTful web service
 		RestAssured.baseURI = "https://reqres.in/";
+		
      
 	
 		// Get the RequestSpecification of the request that you want to sent to the server. 
@@ -31,6 +32,7 @@ public class Demo2_2 {
 		 //print the message body of the response received from the server
 		String responseBody = response.getBody().asString();
 		System.out.println("Response Body is =>  " + responseBody);
+		System.out.println("Done");
 	}
 	
 	
